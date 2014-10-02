@@ -1,0 +1,4 @@
+runtime "python"
+pip "boto"
+pip "google-api-python-client"
+exec "hello_worker_local.py"
