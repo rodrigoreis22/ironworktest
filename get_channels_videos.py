@@ -19,6 +19,8 @@ def get_videos_by_channel(channel_id, sync_date):
 			published_at = search_result["snippet"]["publishedAt"]
 			video_id = search_result["id"]["videoId"]
 			watch_link = "https://www.youtube.com/watch?v=%s" % (video_id)
+			#high res thumb: http://i.ytimg.com/vi/nngQL2wPgao/maxresdefault.jpg
+			#http://stackoverflow.com/questions/2068344/how-do-i-get-a-youtube-video-thumbnail-from-the-youtube-api
 			print "%s \t %s \t %s \t %s" % (title, published_at, video_id, watch_link)
 
 	#print search_response
